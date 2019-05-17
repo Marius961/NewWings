@@ -1,0 +1,80 @@
+{% load static   %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Title</title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
+
+
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&amp;subset=cyrillic,cyrillic-ext"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'new_wings/style.css' %}"/>
+</head>
+<body>
+    {% include 'new_wings/header.html' %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4">
+                <h1>Наші спонсори</h1>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-mb-1 ">
+                 <img src="{% static 'new_wings/image/1.png'%}"  height="100%" width="100%" alt="">
+            </div>
+            <div class="col-mb-1">
+                 <img src="{% static 'new_wings/image/2.png'%}"  height="100%" width="100%" alt="">
+            </div>
+            <div class="col-mb-1">
+                 <img src="{% static 'new_wings/image/3.png'%}"  height="100%" width="100%" alt="">
+            </div>
+            <div class="col-mb-1">
+                 <img src="{% static 'new_wings/image/4.png'%}"  height="100%" width="100%" alt="">
+            </div>
+            <div class="col-mb-1">
+                 <img src="{% static 'new_wings/image/5.png'%}"  height="100%" width="100%" alt="">
+            </div>
+            <div class="col-mb-1">
+                 <img src="{% static 'new_wings/image/6.png'%}"  height="100%" width="110%" alt="">
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-11">
+                <hr class="bg-secondary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                Центр створено волонтерськими зусиллями на кошти спонсорів та меценатів. Для учасників бойових дій послуги надаються на безоплатній основі, благодійні внески для подальшої ефективної роботи Центру вітаються.
+            </div>
+            <div class=" col-md-4 pt-3">
+                <button class="btn btn-success p-3">Пожертвувати</button>
+            </div>
+        </div>
+    </div>
+    {% include 'new_wings/footer.html' %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

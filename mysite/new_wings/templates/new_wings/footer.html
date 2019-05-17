@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'new_wings/style.css' %}"/>
+</head>
+<body>
+    <footer class="container mt-5 mb-4 pt-5 sticky-bottom">
+    <div class="row">
+        <div class="col-6 contact"><h6 >Контакти</h6></div>
+
+    </div>
+    <i>Ми відкриті для пропозицій та ідей щодо розвитку Центру в напрямку психологічного розвантаження.</i>
+    <div class="row d-flex">
+
+        <div class="col-5 d-flex flex-column justify-content-between mt-3 ">
+
+            <a href="mailto:" class="  text-dark font-weight-bold text-decoration-none">exemple.@mail.com</a>
+            <a href="tell:+380" class="text-dark font-weight-bold text-decoration-none">+380***</a>
+        </div>
+        <div class="col-4 mt-3">
+             <img src="{% static 'new_wings/image/logo.jpg'%}" alt="" height="100" width="120">
+        </div>
+        <div class="col-3 mt-4  d-flex justify-content-around social " >
+            <a href="#" >
+               <i class="fab fa-facebook-f text-dark"></i>
+            </a>
+            <a href="#"><i class="fab fa-instagram text-dark"></i></a>
+            <a href="#"><i class="fab fa-viber text-dark"></i></a>
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>
