@@ -15,20 +15,20 @@
     <i>Ми відкриті для пропозицій та ідей щодо розвитку Центру в напрямку психологічного розвантаження.</i>
     <div class="row d-flex">
 
-        <div class="col-5 d-flex flex-column justify-content-between mt-3 ">
+        <div class="col-xl-10 d-flex flex-column justify-content-between mt-3 ">
+            {% for contact in contacts %}
+            <a href="mailto:{{contact.email}}" class="  text-dark font-weight-bold text-decoration-none ">{{contact.email}}</a>
+            {% endfor %}
+            {% for contact in contacts%}
+            <a href="tell:{{contact.phone}}" class="text-dark font-weight-bold text-decoration-none mt-3">{{contact.phone}}</a>
+            {% endfor %}
+        </div>
 
-            <a href="mailto:" class="  text-dark font-weight-bold text-decoration-none">exemple.@mail.com</a>
-            <a href="tell:+380" class="text-dark font-weight-bold text-decoration-none">+380***</a>
-        </div>
-        <div class="col-4 mt-3">
-             <img src="{% static 'new_wings/image/logo.jpg'%}" alt="" height="100" width="120">
-        </div>
-        <div class="col-3 mt-4  d-flex justify-content-around social " >
+        <div class="col-sm-2 col-sm mt-4  d-flex justify-content-around social " >
+
             <a href="#" >
                <i class="fab fa-facebook-f text-dark"></i>
             </a>
-            <a href="#"><i class="fab fa-instagram text-dark"></i></a>
-            <a href="#"><i class="fab fa-viber text-dark"></i></a>
 
         </div>
     </div>

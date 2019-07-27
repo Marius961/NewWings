@@ -5,9 +5,10 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
-    path('home/', views.home, name='home'),
-    path('/donate', views.donate, name='donate'),
+    path('', views.home, name='home'),
+    path('donate', views.donate, name='donate'),
     path('support',views.support, name ='support'),
-    path('rehabilitation', views.rehabil, name='rehabil')
+    path('rehabilitation', views.rehabil, name='rehabil'),
+    path('news', views.news, name='news')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
 + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

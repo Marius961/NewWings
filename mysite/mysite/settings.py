@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/new_wings/static/'
 MEDIA_URL = '/media/'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com' #Например, smtp.gmail.com
+EMAIL_HOST_USER = 'ua.if.andriy20@gmail.com' #Например, user@gmail.com. Именно его необходимо указывать как ВАШ_EMAIL_ДЛЯ_ОТПРАВКИ_СООБЩЕНИЯ в исходном коде предыдущего пункта
+EMAIL_HOST_PASSWORD = 'andriyandriy02'

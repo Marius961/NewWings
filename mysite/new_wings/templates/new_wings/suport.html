@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -20,31 +20,26 @@
 
 <body>
 {% include "new_wings/header.html"%}
-<div class="container mt-5  ">
+<div class="container">
     <div class="row">
-        <div class="col-6">
-            <h2>Зворотній зв'язок</h2>
-            <p class="lead">
-                Напишіть нам щоб ми могли допомогти вам
-            </p>
+        <div class="col-10">
+             <form  method="post">{% csrf_token %}
+
+     {{ form }}
+
+<div class="row mt-2 ">
+        <div class="col-md-2 mr-auto"><button class="btn btn-primary" type="submit">Відправити</button></div>
+    </div>
+</form>
         </div>
 
     </div>
-    <div class="row">
-        <div class="col-10 ">
-            <form method="POST">{% csrf_token %}
 
-                {{form.as_p}}
-            </form>
-        <div class="row mt-3 ">
-            <div class="col-md-1  ml-auto">
-                <form method="post">
-                <button type="submit" class="btn btn-primary ">Submit</button>
-                </form>
-            </div>
+</div>
 
-        </div>
-    </div>
+
+
+
     {% include "new_wings/footer.html" %}
     <script crossorigin="anonymous"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
